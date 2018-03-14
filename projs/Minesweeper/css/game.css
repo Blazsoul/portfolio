@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(248, 177, 24);
+}
+img {
+    width: 100%;
+    display: block;
+  }
+.level {
+    font-family: 'adamfont';
+}
+.left-col {
+    /* float: left;
+    margin-left: 30%; */
+    height:20px;
+}
+
+.center-col {
+    /* float: left;
+    text-align:center; */
+    height:20px; 
+    /* margin-left: 10%; */
+}
+
+.right-col {
+    /* float: left;
+    text-align: right; */
+    height:20px;
+    /* margin-left: 10%; */
+} 
+
+.endPic {
+    height: 150px;
+    width: 150px;
+}
+
+.gameBoard {
+    background-color: rgb(99, 192, 130);
+    border: 3px solid #143655;
+}
+.level {
+    
+    padding: 10px;
+    font-family: 'adamfont';
+    border: 3px dashed #206fb9;
+}
+table {
+    margin: 0 auto;
+}
+.gameBoard td {
+    /* padding: 10px; */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.gameBoard img {
+    width: 40px;
+    height: 40px;
+}
+@font-face {
+    font-family: 'adamfont'; /*a name to be used later*/
+    src: url('../font/ADAM.CG.otf'); /*URL to font*/
+   
+}
+.gameTitle{
+    display: inline-block;
+    padding: 10px;
+    font-family: 'adamfont';
+    border: 3px dashed #143655;
+}
+.gameWrapper {
+    background-color: rgba(76, 211, 223, 0.795);
+    text-align: center;
+    border: 3px solid #143655;
+}
+.showCount {
+    /* border: 1px solid rgb(29, 26, 221);
+    display: inline-block;
+    border-radius: 1px; */
+    background-color: rgba(19, 62, 155, 0);
+    border: 3px solid #143655;
+    padding: 10px;
+    margin: 0px 0 0 0;
+    color:#000000; 
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #39A03F ;
+    float:left;
+    margin-right: 20px;
+    
+    
+}
+.scoreWrapper {
+    display: inline-block;
+    font-family: 'Anson';  
+    font-size: 1.5em; 
+   
+    
+    
+}
+
+.marked {
+    background-color: rgba(49, 216, 119, 0);
+    border: 3px solid #143655;
+    padding: 10px;
+    margin: 0px 0 0 0;
+    color:#000000; 
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #39A03F ;
+    /* margin: 2px; */
+    float:right;
+}
+
+
+.matchEnd {
+    display: none;
+}
+.gameButtonMatchEnd {
+
+    background:    #3d85c6;
+background:    -webkit-linear-gradient(#3d85c6, #073763);
+background:    linear-gradient(#3d85c6, #073763);
+border-radius: 5px;
+padding:       8px 20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal 700 24px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+margin: 20px;
+
+}
+.gameButtonMatchEnd:hover {
+    background: green;
+    
+}
+
+@font-face{
+    font-family: 'Anson'; 
+    src: url('../font/Anson.otf'); 
+}

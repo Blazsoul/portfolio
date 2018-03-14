@@ -1,0 +1,262 @@
+body{
+    line-height: 1.0;
+    
+}
+#nav{
+     background-image: linear-gradient(to right,#222, #222, #222, rgba(34, 34, 34, 0));
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index:1001;
+     }
+
+
+hr {
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+        border: 0;
+      }
+ hr:after {
+        display: block;
+        content: '';
+        height: 30px;
+        background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+        background-image: -webkit-radial-gradient(center top, farthest-side, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+        background-image: -moz-radial-gradient(center top, farthest-side, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+        background-image: -o-radial-gradient(center top, farthest-side, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+        background-image: radial-gradient(farthest-side at center top, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+      }
+#nav-wrapper {
+     width: 100%;
+     margin: 0 auto;
+     text-align: left;
+
+     }
+#wrapper{
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        /* margin-bottom: 15px;
+        margin-top: 20px; */
+     }
+     #container {
+        width:100%;
+        text-align:center;
+        margin: 20px;
+    }
+    
+    .left {
+        margin: 20px; 
+        margin-top: 40px;
+        float: left;
+        
+        
+    }
+    
+    #center {
+        display: inline-block;
+        
+        margin:0 auto;
+        
+        
+        
+    }
+    
+    #right {
+        
+        float:right;
+        
+        
+    }
+#frontwrapper{
+        width: 80%;
+        margin: 0 auto;
+        /* text-align: center; */
+        /* margin-bottom: 15px;
+        margin-top: 20px; */
+     }
+#frontcontent {
+        background-color: rgba(110, 105, 105, 0.35);
+        border: 3px solid rgba(221, 221, 221, 0);
+        padding: 20px;
+        margin: 20px 0 0 0;
+        display: block;
+        border-radius: 10px;
+           
+        }
+#frontcontent h1{
+            font-family: 'Anson';
+            font-size: 4em;
+            text-align: left;
+        }
+#frontcontent h2{
+            font-family: 'Anson';
+            /* font-size: 4em; */
+            text-align: left;
+        }
+ #aboutwrapper{
+            
+            margin:50px;
+            
+            /* text-align: center; */
+            /* margin-bottom: 15px;
+            margin-top: 20px; */
+            
+         }
+ #aboutcontent {
+            width: 700px;
+            background-color: rgba(110, 105, 105, 0);
+            border: 3px solid rgba(175, 41, 11, 0.66);
+            padding: 20px;
+            margin: 20px 0 0 0;
+            display: block;
+            border-radius: 10px;
+               
+            }
+#aboutcontent h1{
+                font-family: 'Anson';
+                font-size: 3em;
+                text-align: left;
+            }
+.aboutcolor{
+    color: #174A57;
+}
+#content {
+     background-color: rgba(255, 255, 255, 0.66);
+     border: 3px solid #DDD;
+     padding: 20px;
+     margin: 20px 0 0 0;
+        
+     }
+#nav-left{
+     float: left;
+     }
+#nav ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+
+#nav ul li { 
+    display: inline-block;
+    }
+    
+#nav ul li:hover {
+     background-color: #333;
+    }
+
+#nav ul li a,visited { 
+        color: #CCC;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+#nav-right{
+     float: right;
+     }
+#nav-right img{
+     width: 45px;
+     height: 40px;
+      vertical-align: middle;
+       margin: 2px 0 0 0;
+     }
+#gamewrapper {
+    
+    width: 1100px;
+    margin: 0 auto;  
+    margin-bottom: 15px;
+    margin-top: 20px;
+    /* margin-left: 21%; */
+    /* margin-right: 20%; */
+    /* top: 250px; */
+       }
+#gamecontent{
+    
+    font-family: 'Anson';   
+    font-size: 24px;  
+    color: #E4E43B;
+    background-color: rgba(110, 105, 105, 0.35);
+    border: 3px solid rgba(221, 221, 221, 0);
+    padding: 20px;
+    margin: 0px 0 0 0;
+    display:inline-block; 
+    position: relative; 
+    border-radius: 10px;
+    perspective: auto;
+    }
+    #gamecontent h1{
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+#scorewrapper {
+     width: 250px;
+     margin: 0 auto;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     text-align: center;
+     
+     
+    }
+#scorecontent {
+    background-color: rgba(19, 62, 155, 0);
+    border: 3px solid #143655;
+    padding: 0px;
+    margin: 0px 0 0 0;
+    color:#000000; 
+    border-style: solid;
+    border-color: #39A03F ;
+    border-radius: 30px;
+    
+    
+        /* display:inline-block; */
+        /* position: relative; */
+    }
+
+    
+#scorewrapper1 {
+    width: 250px;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+    
+   }
+#scorecontent1 {
+   background-color: rgba(19, 62, 155, 0);
+   border: 3px solid #143655;
+   padding: 0px;
+   margin: 0px 0 0 0;
+   color:#000000; 
+   border-style: solid;
+   border-color: #39A03F ;
+   border-radius: 30px;
+   
+       /* display:inline-block; */
+       /* position: relative; */
+   }
+
+
+   .footer {
+    
+    margin-top: 40px;
+    padding:1px 0px;
+    width: 100%;
+    
+    background-color: #222;
+    /* background:linear-gradient(to right,rgba(34, 34, 34, 0), #222, #222,rgba(34, 34, 34, 0)); */
+    color: white;
+    text-align: center;
+    
+ }
+ .makefixed {
+    position: fixed;
+    bottom: 0;
+ }

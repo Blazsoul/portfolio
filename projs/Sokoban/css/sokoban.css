@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'adamfont'; /*a name to be used later*/
+    src: url('../font/ADAM.CG.otf'); /*URL to font*/
+}
+@font-face {
+font-family: 'Crabmeal'; 
+src: url('../font/Crabmeal.otf'); 
+}
+@font-face{
+font-family: 'Anson'; 
+src: url('../font/Anson.otf');
+}
+.game {
+    width: 1000px;
+    width: 1000px;
+    margin: 0 auto; 
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(37, 230, 236);
+    
+   
+}
+.gameTitle{
+    
+    /* display: inline-block; */
+    font-family: 'adamfont';
+    padding: 10px;
+    font-size: 60px; 
+    text-align: center;
+    /* border: 3px solid rgb(46, 226, 91);
+    border-radius: 10px; */
+    color: rgb(252, 98, 9);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+
+.gameBoard {
+    background-color: rgb(99, 192, 130);
+    /* border: 1px solid #143655; */
+    margin-left: 150px;
+}
+.gameBoard td {
+    width: 50px;
+    height: 50px;
+    
+}
+.marked {
+    background-color: rgba(53, 50, 240, 0.849);
+}
+img {
+    width: 100%;
+    display: block;
+}
+.show {
+    /* float: right;
+    border: 3px solid #143655;
+    display: inline; */
+    
+    /* display: inline-block;
+    width:120px;
+    height:120px;
+    border: 1px solid red; */
+    
+    background-color: yellow;
+    border:1px solid #212DCE;
+    border-radius:10px;
+    font-family: 'Anson';
+    margin: 10px;
+    padding: 7px;
+    text-align:center;
+    font-size:1.5em;
+    display: inline-block;
+}
+.show:hover{
+    background-color: palegreen;
+}
+.reset {
+    
+        margin-right: 10px;
+    
+}
+.score {
+    margin-right: 10px;
+}
+.steps {
+    margin-right: 10px;
+}
+.magnets {
+    margin-right: 10px;
+}
+.magnets img {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.showWin {
+    /* vertical-align:top;
+    display: inline-block;
+    width:160px;
+    height:160px;
+    border: 1px solid green; */
+    background-color: rgb(25, 211, 9);
+    /* margin: 10px;
+    padding: 20px; */
+    /* margin-left: 130px; 
+    margin-right: 130px;  */
+    /* text-align:center;
+    display: inline-block; */
+    display: none;
+}
+.matchDetails {
+    /* border: 1px solid blue; */
+    /* width: 40%;
+    margin: 0 auto; */
+    margin-left: 28%;
+    float:left; 
+    /* width:1%; */
+    
+    
+}
+table {
+    /* margin : 150 px; */
+    border: none !important;
+    margin: 0 auto;
+}
+
+table tr td {
+    border: none !important;
+}
+
+.targeted {
+    background-color: rgba(255, 0, 0, 0.856);
+}
+
+.centerDiv {
+
+
+    /* margin: 0 auto;
+    text-align: center; */
+    /* margin: 200px; */
+}
+
+hr {
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    border: 0;
+  }
+hr:after {
+    display: block;
+    content: '';
+    height: 30px;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-radial-gradient(center top, farthest-side, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-radial-gradient(center top, farthest-side, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-radial-gradient(center top, farthest-side, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(farthest-side at center top, #36E069 0%, rgba(255, 255, 255, 0) 100%);
+  }

@@ -1,0 +1,135 @@
+body{ 
+    /* overflow-y: hidden; */
+    padding: 0;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 16px;
+    background-image: url("../img/layout/background.png");
+    /* height: 2000px; */
+    line-height: 1.0;
+    }
+.header {
+        background-color: lightblue;
+        padding: 20px;
+        border-bottom: 10px solid darkcyan;
+        color:darkcyan;
+        font-size: 1.5em;
+        text-align: center;
+        
+    }
+ .header1 {
+        
+        margin-bottom: 60px; 
+    }
+ img.logo {
+        z-index:1002;
+        position:fixed;
+        right:0px;
+        float:right;
+    }
+ img.logo2 {
+        z-index:1003;
+        position: fixed;
+        float:left;
+        
+        
+    }
+@font-face {
+        font-family: 'adamfont'; /*a name to be used later*/
+        src: url('../font/ADAM.CG.otf'); /*URL to font*/
+ }
+ @font-face {
+    font-family: 'Crabmeal'; 
+    src: url('../font/Crabmeal.otf'); 
+}
+@font-face{
+    font-family: 'Anson'; 
+    src: url('../font/Anson.otf');
+}
+ .undernav {
+    
+    text-align: center;
+}
+.undernav .gametitle {
+    font-family: 'adamfont';
+    font-size: 70px;
+    color: #0E1F44
+}
+#usernamepage {
+    font-family: 'adamfont';
+    font-size:30px;
+}
+#notyou {
+
+}
+.undergame {
+    text-align: center;
+}
+.bestimeclass{
+    
+    font-size:40px;
+    font-family: 'Crabmeal';
+    color: #B13333;
+    margin: 0px;
+
+}
+
+
+.button-rematch {
+            
+                background-color:#212DCE;
+                -moz-border-radius:28px;
+                -webkit-border-radius:28px;
+                border-radius:28px;
+                border:1px solid #212DCE;
+                display:inline;
+                cursor:pointer;
+                color:#ffffff;
+                font-family:Arial;
+                font-size:22px;
+                padding:18px 38px;
+                text-decoration:none;
+                border:100px;
+                transition: .5s ease;
+                
+        }
+.button-rematch:hover {
+                background-color:#2461EE;
+        }
+.button-rematch:active {
+                position:relative;
+                top:1px;
+        }
+ .vanish {
+            display: none;
+} 
+.button-score {
+    
+        background-color:#DF0000;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #D12E2E;
+        display:inline;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:22px;
+        padding:18px 38px;
+        text-decoration:none;
+        border:100px;
+        transition: .5s ease;
+        
+}
+.button-score:hover {
+        background-color:#E64141;
+}
+.button-score:active {
+        position:relative;
+        top:1px;
+}
+.vanish {
+    display: none;
+} 
+ 
+        

@@ -1,0 +1,53 @@
+.gameWrapper{
+    font-family: 'adamfont';
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(#4f4cd4, #66c09a, #be1b1b);
+    display: inline-block;
+    margin: 0 auto;
+    
+}
+
+
+.nextNumber {
+    float: left;
+}
+.time {
+    float: right;
+    
+}
+
+
+.gameButton{
+
+    background:    #3d85c6;
+background:    -webkit-linear-gradient(#3d85c6, #073763);
+background:    linear-gradient(#3d85c6, #073763);
+border-radius: 5px;
+padding:       8px 20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal 700 24px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+.gameButton:hover {
+    background: green;
+    
+}
+.selected {
+    background: rgb(230, 189, 7);
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-family: 'adamfont';
+    font-size: 50px;
+}
+@font-face {
+    font-family: 'adamfont'; /*a name to be used later*/
+    src: url('font/ADAM.CG.otf'); /*URL to font*/
+}

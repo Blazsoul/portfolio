@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sokaban</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sokoban.css" />
+</head>
+
+<body>
+    <div class="game">
+        <div class="gameTitle">Sokoban</div>
+        <hr>
+        <br>
+        <div class="centerDetails">
+
+            <div class="matchDetails">
+                <div class="show reset " onclick="initGame();">reset</div>
+
+                <div class="show score">Score:</div>
+                <div class="show steps">Steps:</div>
+                <div class="show magnets"><img src="img/magnet.png" >0</div>
+                
+                <div class="show showWin"></div>
+                
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table>
+            <tbody class="gameBoard"></tbody>
+
+        </table>
+    </div>
+</body>
+<script src="js/utils.js"></script>
+<script src="js/sokoban.js"></script>
+
+</html>

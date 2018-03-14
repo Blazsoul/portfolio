@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Memory game</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/game.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="icon" href="img/layout/icon.svg">
+</head>
+
+<body>
+  <div id="nav">
+    <div id="nav-wrapper">
+      <div id="nav-left">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="game.html">Game</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="">
+
+      </div>
+      <div id="nav-right">
+        <img src="https://yt3.ggpht.com/-sa7F656qXo0/AAAAAAAAAAI/AAAAAAAAAAA/jzG_AM4hOW8/s100-c-k-no/photo.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <div class="header1">
+    <img class="logo" src="img/layout/logo.png">
+    <img class="logo2" src="img/layout/logo2.png">
+  </div>
+
+  <div class="undernav">
+    <a class="gametitle">Memoria Monstra</a>
+    <br>
+    <div class="usernameshow">
+      <a id="usernamepage"></a>
+      <br>
+      <a href="#" id="notyou" onclick="usernamenotyou()">Not you?</a>
+      <br>
+      <a href="#" id="usersremove" onclick="removeusers()">Remove all users</a>
+    </div>
+    <hr>
+  </div>
+
+  <div class="score vanish" id="scorewrapper">
+    <div id="scorecontent">
+
+      <a class="bestimeclass"></a>
+
+    </div>
+
+  </div>
+
+
+  <div id="gamewrapper">
+    <div id="gamecontent">
+      <h1>Click The Cards To Start The Game</h1>
+      <div class="gameboard">
+
+        <div class="card" data-card="1" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/1.png">
+          <img class="back" src="img/cards/back.png">
+
+        </div>
+        <div class="card" data-card="1" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/1.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="2" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/2.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="2" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/2.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="3" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/3.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="3" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/3.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="4" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/4.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="4" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/4.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="5" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/5.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="5" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/5.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="6" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/6.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="6" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/6.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="7" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/7.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="7" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/7.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="8" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/8.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="8" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/8.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="9" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/9.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+        <div class="card" data-card="9" onclick="cardClicked(this)">
+          <img class="front" src="img/cards/9.png">
+          <img class="back" src="img/cards/back.png">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="undergame">
+    <br>
+
+    <a class="button-rematch vanish" id="playagain" onclick="resetgame()">Play Again</a>
+    <a class="button-score vanish" id="rstscore" onclick="bestimeremove()">Reset Score</a>
+  </div>
+
+  </div>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <div class="footer">
+    <p>&copy; Copyrights Reserved To Tamir Dalal</p>
+  </div>
+
+
+</body>
+
+</html>

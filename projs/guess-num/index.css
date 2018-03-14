@@ -1,0 +1,59 @@
+.header {
+    /* margin: 100px; */
+    padding: 50px;
+    background-color: rgba(48, 74, 150, 0.836);
+
+}
+.header h2 {
+    color:rgba(235, 188, 35, 0.945);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+.gameWrapper {
+    padding: 10px;
+    background-color: rgba(189, 159, 96, 0.781);
+    text-align: center;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.gameTitle h3{
+color: firebrick;
+
+}
+
+.gameTitle span{
+color:green;
+}
+
+.guessButton{
+
+    background:    #3d85c6;
+background:    -webkit-linear-gradient(#3d85c6, #073763);
+background:    linear-gradient(#3d85c6, #073763);
+border-radius: 5px;
+padding:       8px 20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal 700 24px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+.guessButton:hover {
+    background: green;
+}
+
+.textOutput {
+    font-family: 'adamfont';
+    font-size: 1em;
+    margin-top: 10px;
+    color: #0E1F44
+}
+
+@font-face {
+    font-family: 'adamfont'; /*a name to be used later*/
+    src: url('font/ADAM.CG.otf'); /*URL to font*/
+}
+@font-face {
+font-family: 'Crabmeal'; 
+src: url('../font/Crabmeal.otf'); 
+}
