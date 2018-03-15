@@ -10,6 +10,7 @@
 
   <title>Zlatan</title>
 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,9 +27,9 @@
 </head>
 
 <body id="page-top">
-  <div class="offcanvas-btn" onClick="openCanvas()">
+  <!-- <div class="offcanvas-btn" onClick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
-  </div>
+  </div> -->
   <aside class="offcanvas-aside">
 
     <!-- Contact -->
@@ -36,21 +37,9 @@
       <!-- <h4>Contact Me</h4> -->
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h4>Contact Me</h4>
-          <form>
-            <!-- <div class="form-group row has-success">
-              <label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control form-control-success" id="form_email" placeholder="name@example.com">
-
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-2 col-form-label">Subject</label>
-              <div class="col-10">
-                <input class="form-control" type="text" placeholder="Enter subject" id="form_subject" >
-              </div>
-            </div> -->
+          <!-- <h4>Contact Me</h4> -->
+          <!-- <form>
+        
             <div class="form-group">
               <label for="exampleTextarea">Email:</label>
               <textarea class="form-control" id="form_email" rows="1" placeholder="name@example.com"></textarea>
@@ -66,7 +55,7 @@
             <div class="col-md-12">
               <button type="button" class="btn btn-success btn-send" value="Send message" onclick="sendMailto()">Submit</button>
             </div>
-          </form>
+          </form> -->
         </div>
 
       </div>
@@ -78,7 +67,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="topImg" src="/img/style/top.png" alt=""></a>
+      <a class="navbar-brand js-scroll-trigger to-top" href="#page-top"><i class="fas fa-arrow-up"></i></a>
       <button class="navbar-toggler navbar-toggler-right backClr" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
@@ -95,7 +84,7 @@
             <a class="nav-link js-scroll-trigger" href="#team">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#" onClick="openCanvas()">Contact</a>
+            <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#contact-modal">Contact</a>
           </li>
         </ul>
       </div>
@@ -108,7 +97,11 @@
       <div class="intro-text">
         <div class="intro-lead-in main-title"><a>Welcome Aboard</a></div>
         <div class="intro-heading secondary-title "><a>Behave Yourself</a></div>
-        <a class="btn btn-xl js-scroll-trigger" href="#portfolio">Portfolio</a>
+        
+        <a class="btn btn-primary js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <div class="downArrow bounce">
+            <i class="fas fa-arrow-down"></i>  
+        </div>
       </div>
     </div>
   </header>
@@ -154,7 +147,7 @@
     </div>
   </section> -->
   
-  <hr class="type-green">
+  <!-- <hr class="type-green"> -->
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
     <div class="container">
@@ -170,9 +163,10 @@
     </div>
   </section>
   
-  <hr class="type_3">
+  
   <!-- Team -->
   <section class="bg-light" id="team" style="padding: 0px;">
+    <hr class="type_3">
     <div class="row align-items-center">
       <div class="col-sm-4">
         <div class="team-member">
@@ -184,12 +178,12 @@
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="https://twitter.com/ibra_official" target="_blank">
-                <i class="fa fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.facebook.com/Zlatan.Legend/" target="_blank">
-                <i class="fa fa-facebook"></i>
+                <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <!-- <li class="list-inline-item">
@@ -201,6 +195,7 @@
         </div>
       </div>
       <div class="col-sm-8 rounded ">
+        
         <p class="large text-muted about-description">"Only God knows... You’re talking to him now"
           <br> "Lions do not compare themselves to humans"
           <br> "When Zlatan looks in the mirror he doesnt see anything, cause there is only 1 Zlatan"
@@ -210,7 +205,7 @@
           <br> "Once Zlatan took a lie detector test, The machine confessed everything"
           <br> "One day Zlatan missed two days in a row in the school. Later on, these days were called Saturday and Sunday."
           <br> "Zlatan doesnt need goals, Goals need zlatan."
-          <br> "I do not need a trophy to tell myself that I am the best."
+          
         </p>
       </div>
     </div>
@@ -220,12 +215,12 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 flex-align-center">
+      <a class="footer-title">© Copyrights Reserved To Tamir Dalal<a>
+        <!-- <div class="col-md-4 flex-align-center">
           <a href="http://coding-academy.org" target="_blank">
             <img src="./img/ca-logo.png" alt="">
           </a>
-        </div>
+        </div> -->
         <!-- <div class="col-md-4 flex-align-center">
           <ul class="list-inline social-buttons flex-align-center">
             <li class="list-inline-item">
@@ -245,7 +240,7 @@
             </li>
           </ul>
         </div> -->
-        <div class="col-md-4 flex-align-center">
+        <!-- <div class="col-md-4 flex-align-center">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
               <a href="#">More Me</a>
@@ -254,7 +249,7 @@
               <a href="#">Even More</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>
@@ -264,6 +259,46 @@
   <!-- Modal 1 -->
   <div class="modalContainer"></div>
 
+
+
+  <!-- <button class="btn btn-primary" data-trans="NEWBOOK" data-toggle="modal" data-target="#contact-modal">show modal</button> -->
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contact-modal-Label">Contact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="form_email">Email:</label>
+            <input type="text" class="form-control" id="form_email" rows="1" placeholder="name@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form_subject">Subject:</label>
+            <input type="text" class="form-control" id="form_subject" placeholder="Enter subject" rows="1" required />
+          </div>
+          <div class="form-group">
+            <label for="form_message">Message</label>
+            <textarea class="form-control" id="form_message" rows="3"></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="button" class="btn btn-success btn-send" value="Send message" onclick="sendMailto()">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Send message</button> -->
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/popper/popper.min.js"></script>
@@ -278,8 +313,6 @@
   <script src="js/offCanvas.js"></script>
   <!-- <script src="vendor/require/require.js"></script> -->
   <script src="js/main.js"></script>
-
-  <h1>my change</h1>
 
 
 </body>

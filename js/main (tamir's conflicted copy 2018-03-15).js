@@ -61,7 +61,7 @@ function renderProjs() {
      </div>
      <div class="projDetails">
      <h5 class="projTitle">${proj.title}</h5>
-    
+     <h5 class="projTitle">${proj.desc}</h5>
      <h5></h5>
      </div>
      </div>
@@ -120,7 +120,6 @@ function renderProjs() {
 }
 
 function sendMailto() {
-    $('#contact-modal').modal('toggle');
     var valEmail = $('#form_email').val();
     var valSubject = $('#form_subject').val();
     var valMsg = $('#form_message').val();

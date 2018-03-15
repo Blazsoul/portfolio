@@ -131,7 +131,7 @@ body {
 }
 
 #mainNav {
-    background-color: #222222;
+    background-color: #af2828;
 }
 
 #mainNav .navbar-toggler {
@@ -165,6 +165,10 @@ body {
     text-transform: uppercase;
 }
 
+.nav-item {
+    cursor: pointer;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fed136;
 }
@@ -191,7 +195,7 @@ body {
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #9a0000;
+        background-color: #af2828;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -242,7 +246,6 @@ header.masthead .intro-text .intro-heading {
         /* my adding */
         padding-top: 100px;
         padding-bottom: 20px;
-
     }
     header.masthead .intro-text .intro-lead-in {
         font-size: 40px;
@@ -690,6 +693,7 @@ header.masthead .intro-text .intro-heading {
     max-width: 80%;
     /* my adding */
     font-style: italic;
+    margin: 0 auto;
 }
 
 @media (max-width: 800px) {
@@ -703,6 +707,9 @@ header.masthead .intro-text .intro-heading {
 footer {
     padding: 25px 0;
     text-align: center;
+    /* my adding */
+    background-color: rgb(43, 39, 39);
+    margin-top:20px;
 }
 
 footer span.copyright {
@@ -868,10 +875,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .projs {}
 
-.mainPic {
+/* .mainPic {
     width: 300px;
     height: 300px;
-}
+} */
 
 .stretchedBorder {}
 
@@ -882,12 +889,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 @font-face {
     font-family: 'Poppinst';
-    src: url('/font/Poppins-Light.ttf');
+    src: url('../font/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: 'Muli';
-    src: url('/font/Muli-Light.ttf');
+    src: url('../font/Muli-Light.ttf');
 }
 
 @font-face {
@@ -916,7 +923,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 } */
 
 .img-shadow {
-    margin-top:20px;
+    margin-top: 20px;
     position: relative;
     max-width: 100%;
     float: left;
@@ -970,7 +977,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .backClr {
-    background-color: rgb(18, 121, 238) !important;
+    background-color: rgb(82, 146, 33) !important;
 }
 
 .portfolioTitle {
@@ -984,6 +991,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 hr.type_3 {
     border: 0;
+    margin-top: 0;
     height: 20px;
     background-image: url('../img/style/type_3.png');
     background-repeat: repeat-x;
@@ -1024,10 +1032,93 @@ hr.type-green {
     color: #18183c !important
     /*a name to be used later*/
 }
+
 .main-title {
     padding-bottom: 350px;
 }
+
 .secondary-title a {
     font-size: 3rem;
-    color:rgb(214, 149, 9) !important;
+    color: rgb(214, 149, 9) !important;
+}
+
+/* animated arrow start ############ */
+
+.downArrow{
+    margin-top:30px;
+    font-size: 2em;
+    display: block;
+    color: rgb(190, 219, 26);
+	/* position: fixed; */
+	bottom: 45%;
+	left: 50%;
+}
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+/* animated arrow end ############ */
+
+.to-top {
+    transition: all 0.3s;
+}
+
+.to-top:hover {
+    transform: rotate(360deg);
+    
+    /* transition: all 0.3s; */
+}
+
+.container .footer-title {
+    color: #c7c1c1 !important;
+    font-size: 1rem;
 }
