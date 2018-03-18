@@ -1,0 +1,24 @@
+.first-p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.second-p {
+    margin: 0;
+}
+.img-wrapper  {
+    flex-basis: 50%;
+}
+.blog-item {
+    box-shadow: none;
+}
+.blog-container-info {
+    flex-basis: 50%;
+    padding-left: 35px;
+}
+.blog-container-info h2 {
+    margin-top:0;
+}
+.blog-container-info button {
+    display: inline-block;
+}
